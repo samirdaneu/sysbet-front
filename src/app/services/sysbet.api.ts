@@ -1,0 +1,1 @@
+export const SYSBET_API: string = 'http://localhost:8080'

@@ -1,0 +1,109 @@
+<aside class="main-sidebar">
+  <section class="sidebar" style="height: auto;">
+    <ul class="sidebar-menu" data-widget="tree">
+      <li class="treeview" *ngIf="shared.user.profile == 'ADMIN'">
+        <a href="#">
+          <i class="fa fa-edit"></i> <span>User</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+         </a> 
+        <ul class="treeview-menu">
+          <li><a [routerLink]="['/user-list']"><i class="fa fa-circle-o"></i>List</a></li>
+          <li><a [routerLink]="['/user-new']"><i class="fa fa-circle-o"></i>New</a></li>
+        </ul>
+      </li>
+      <li class="treeview" *ngIf="shared.user.profile != 'ADMIN'">
+        <a href="#">
+          <i class="fa fa-edit"></i> <span>Team</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+         </a> 
+        <ul class="treeview-menu">
+          <li><a [routerLink]="['/team-list']"><i class="fa fa-circle-o"></i>List</a></li>
+          <li *ngIf="shared.user.profile == 'CUSTOMER'"><a [routerLink]="['/team-new']"><i class="fa fa-circle-o"></i>New</a></li>
+        </ul>
+      </li>
+      <li class="treeview" *ngIf="shared.user.profile != 'ADMIN'">
+        <a href="#">
+          <i class="fa fa-edit"></i> <span>Player</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+         </a> 
+        <ul class="treeview-menu">
+          <li><a [routerLink]="['/player-list']"><i class="fa fa-circle-o"></i>List</a></li>
+          <li *ngIf="shared.user.profile == 'CUSTOMER'"><a [routerLink]="['/player-new']"><i class="fa fa-circle-o"></i>New</a></li>
+        </ul>
+      </li>
+      <li class="treeview" *ngIf="shared.user.profile != 'ADMIN'">
+        <a href="#">
+          <i class="fa fa-edit"></i> <span>Competition</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+         </a> 
+        <ul class="treeview-menu">
+          <li><a [routerLink]="['/competition-list']"><i class="fa fa-circle-o"></i>List</a></li>
+          <li *ngIf="shared.user.profile == 'CUSTOMER'"><a [routerLink]="['/competition-new']"><i class="fa fa-circle-o"></i>New</a></li>
+        </ul>
+      </li>
+      <li class="treeview" *ngIf="shared.user.profile != 'ADMIN'">
+        <a href="#">
+          <i class="fa fa-edit"></i> <span>Suspended Players</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+         </a> 
+        <ul class="treeview-menu">
+          <li><a [routerLink]="['/competition-list']"><i class="fa fa-circle-o"></i>View</a></li>
+        </ul>
+      </li>
+      <li class="treeview" *ngIf="shared.user.profile != 'ADMIN'">
+        <a href="#">
+          <i class="fa fa-edit"></i> <span>Shapes</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+         </a> 
+        <ul class="treeview-menu">
+          <li><a [routerLink]="['/competition-list']"><i class="fa fa-circle-o"></i>View</a></li>
+        </ul>
+      </li>
+      <li class="treeview" *ngIf="shared.user.profile != 'ADMIN'">
+        <a href="#">
+          <i class="fa fa-edit"></i> <span>Bets</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+         </a> 
+        <ul class="treeview-menu">
+          <li><a [routerLink]="['/competition-list']"><i class="fa fa-circle-o"></i>View</a></li>
+        </ul>
+      </li>
+      <li class="treeview" *ngIf="shared.user.profile != 'ADMIN'">
+        <a href="#">
+          <i class="fa fa-edit"></i> <span>Bankroll</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+         </a> 
+        <ul class="treeview-menu">
+          <li><a [routerLink]="['/competition-list']"><i class="fa fa-circle-o"></i>View</a></li>
+        </ul>
+      </li>
+      <li class="treeview" *ngIf="shared.user.profile != 'ADMIN'">
+        <a href="#">
+          <i class="fa fa-edit"></i> <span>Fairs Lines</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+         </a> 
+        <ul class="treeview-menu">
+          <li><a [routerLink]="['/competition-list']"><i class="fa fa-circle-o"></i>View</a></li>
+        </ul>
+      </li>
+     </ul> 
+  </section>
+</aside>
